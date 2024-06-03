@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="./styles/footer.css" />
 
     <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <script src="./javascript/navbar.js"></script>
   </head>
 
   <body>
@@ -37,7 +40,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#context" onclick="navbarhide()">Context</a>
@@ -46,7 +49,13 @@
               <a class="nav-link" href="#goals" onclick="navbarhide()">Goals</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#drone" onclick="navbarhide()">Drone</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#video" onclick="navbarhide()">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#documents" onclick="navbarhide()">Documents</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#team" onclick="navbarhide()">Team</a>
@@ -75,22 +84,6 @@
         <div class="row justify-content-center">
           <div class="col-md-10">
             <h2 class="title1-dark text-center">Context</h2>
-            <!-- <p class="paragraph-dark text-center">In a rapidly evolving technological world, our reliance on effective communication 
-              networks is more critical than ever. When disasters strike—whether natural, like wildfires, hurricanes, and earthquakes, or man-made—the damage 
-              to infrastructure can have far-reaching consequences. Among the hardest hit are often our telecommunication networks, which serve as lifelines, 
-              connecting victims to rescuers, families to loved ones, and communities to vital updates and services. When these critical networks go offline, the consequences can be dire, delaying rescue efforts, creating chaos, and 
-              exacerbating the challenges faced by affected communities.</p>
-
-            <p class="paragraph-dark text-center">Understanding the immense importance of sustaining communications during these critical times, we embarked on a 
-              mission to provide a robust, adaptable, and rapid solution. Drones, with their flexibility, maneuverability, and speed, presented an enticing answer. 
-              Equipped with the necessary tools, they can effectively serve as airborne cell towers, bringing back online the crucial 5G communication networks in 
-              disaster-hit areas.</p>
-
-            <p class="paragraph-dark text-center">Our project aims to harness the potential of drone technology to bridge the communication gap during these challenging 
-              times. By deploying drones that can establish 5G connectivity, we hope to provide immediate relief in terms of communication infrastructure. This not only 
-              aids in effective disaster response but also ensures that people in affected areas are not cut off from the world, helping them reach out for assistance 
-              and connect with loved ones.</p> -->
-
             <p class="paragraph-dark text-center">
               Unmanned Aerial Vehicle (UAV) are increasingly popular and affordable, making them ideal for various complex tasks such as carrying
               small loads, scouting areas, and reaching difficult-to-access locations. Leveraging these capabilities, UAV can be invaluable during
@@ -114,19 +107,19 @@
             <div class="row align-items-center mb-4">
               <div class="col-md-6">
                 <h3 class="title2-dark">Starlink</h3>
-                <p class="paragraph-dark">Connecting the drone to the internet using a Starlink access point.</p>
+                <p class="paragraph-dark">Connect the drone to the internet using a Starlink access point.</p>
               </div>
               <div class="col-md-6">
-                <img src="./images/goals/starlink.png" class="img-fluid" alt="Goal 1 Image" />
+                <img src="./images/goals/starlink.png" class="img-fluid" alt="Starlink Goal Image" />
               </div>
             </div>
             <div class="row align-items-center mb-4">
               <div class="col-md-6 order-md-2">
                 <h3 class="title2-dark">5G Connection</h3>
-                <p class="paragraph-dark">Providing a reliable 5G connection to the end-user.</p>
+                <p class="paragraph-dark">Provide a reliable 5G connection to the end-user.</p>
               </div>
               <div class="col-md-6 order-md-1">
-                <img src="./images/goals/5g.png" class="img-fluid" alt="Goal 2 Image" />
+                <img src="./images/goals/5g.png" class="img-fluid" alt="5G Goal Image" />
               </div>
             </div>
             <div class="row align-items-center mb-4">
@@ -135,7 +128,7 @@
                 <p class="paragraph-dark">Determine the distance of points in front of the drone.</p>
               </div>
               <div class="col-md-6">
-                <img src="./images/goals/camera.png" class="img-fluid" alt="Goal 3 Image" />
+                <img src="./images/goals/camera.png" class="img-fluid" alt="Camera Goal Image" />
               </div>
             </div>
             <div class="row align-items-center mb-4">
@@ -144,7 +137,7 @@
                 <p class="paragraph-dark">Create an autonomous way to change the course depending on the surrounding environment.</p>
               </div>
               <div class="col-md-6 order-md-1">
-                <img src="./images/goals/obstacles-avoidance.png" class="img-fluid" alt="Goal 2 Image" />
+                <img src="./images/goals/obstacles-avoidance.png" class="img-fluid" alt="Obstacles Avoidance Goal Image" />
               </div>
             </div>
             <div class="row align-items-center mb-4">
@@ -153,7 +146,7 @@
                 <p class="paragraph-dark">Give the ability to see what the drone sees in real time.</p>
               </div>
               <div class="col-md-6">
-                <img src="./images/goals/live-feed.png" class="img-fluid" alt="Goal 3 Image" />
+                <img src="./images/goals/live-feed.png" class="img-fluid" alt="Live Feed Goal Image" />
               </div>
             </div>
             <div class="row align-items-center mb-4">
@@ -162,9 +155,30 @@
                 <p class="paragraph-dark">Use an app that sends the GPS of the end-user to a mission running on the drone.</p>
               </div>
               <div class="col-md-6 order-md-1">
-                <img src="./images/goals/5g.png" class="img-fluid" alt="Goal 2 Image" />
+                <img src="./images/goals/follow-mission.png" class="img-fluid" alt="5G Goal Image" />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drone -->
+    <section id="drone" class="section-space">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h2 class="title1-dark text-center">Drone</h2>
+            <div class="row align-items-center mb-4">
+              <div class="col-md-6">
+                <img src="./images/drone/equipment.png" class="img-fluid" alt="Drone Equipment Image" />
+              </div>
+              <div class="col-md-6">
+                <img src="./images/drone/drone.jpeg" class="img-fluid" alt="Drone Image" />
+              </div>
+            </div>
+            This is all the equipment that is used in the drone. The Jetson used is a NVIDIA Jetson Orin NX, being the main component of the drone,
+            responsable for processing the depth and color data from the Intel RealSense D415 and where the 5G UPF container is running.
           </div>
         </div>
       </div>
@@ -187,6 +201,37 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Documents -->
+    <section id="documents" class="section-space">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h2 class="title1-dark text-center">Documents</h2>
+            <div class="row text-center justify-content-center mt-5">
+              <div class="col-md-4 d-flex flex-column align-items-center">
+                <a href="./documents/report.pdf" target="_blank">
+                  <i class="fa-solid fa-file-pdf fa-2xl"></i>
+                  <p class="paragraph-dark text-center mt-2">Report</p>
+                </a>
+              </div>
+              <div class="col-md-4 d-flex flex-column align-items-center">
+                <a href="./documents/final_presentation.pdf" target="_blank">
+                  <i class="fa-solid fa-file-pdf fa-2xl"></i>
+                  <p class="paragraph-dark text-center mt-2">Final Presentation</p>
+                </a>
+              </div>
+              <div class="col-md-4 d-flex flex-column align-items-center">
+                <a href="./documents/poster.pdf" target="_blank">
+                  <i class="fa-solid fa-file-pdf fa-2xl"></i>
+                  <p class="paragraph-dark text-center mt-2">Poster</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -320,7 +365,6 @@
         </p>
       </div>
     </footer>
-    <script src="./javascript/navbar.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

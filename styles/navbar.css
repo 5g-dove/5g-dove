@@ -1,20 +1,12 @@
 /* Estilos da Navbar */
 
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
   box-shadow: 0 2px 30px 10px #2125298f;
-  transition: border 0.2s ease-in-out;
-  height: 6vh;
-  max-height: 5rem;
-  min-height: 4rem;
-  z-index: 999;
 }
-  
+
 .navbar .navbar-brand {
   text-transform: uppercase;
-  color: #36b5fe;
+  color: #0090d6;
 }
 
 .navbar-brand span {
@@ -24,7 +16,7 @@
 }
 
 .navbar .navbar-brand:hover {
-  color: #0090d6;
+  color: #36b5fe;
 }
 
 .navbar .navbar-brand:focus {
@@ -56,7 +48,7 @@
   border: 1px solid #212529;
   transition: border 0.2s ease-in-out;
 }
-  
+
 .navbar .navbar-toggler:hover {
   border: 1px solid #0090d6;
 }

@@ -6,7 +6,7 @@ function navbar_aberta() {
   return document.getElementById('toggler').classList.contains('collapsed') ? false : true;
 };
 
-function esconder(navlink = true) {
+function navbarhide(navlink = true) {
   if ((toggler_visivel() && navbar_aberta())) {
     const bsCollapse = new bootstrap.Collapse(document.getElementById("navbarNav"));
   }
